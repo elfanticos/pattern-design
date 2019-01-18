@@ -1,7 +1,16 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+// Componentes
+import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.component';
+import { BuilderComponent } from './builder/builder.component';
+import { HomeComponent } from './home/home.component';
+
+const routes: Routes = [
+  {path : 'abstract_factory', component : AbstractFactoryComponent},
+  {path : 'builder', component : BuilderComponent},
+  {path : '', component : HomeComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
