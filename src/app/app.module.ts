@@ -7,6 +7,7 @@ import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.co
 import { BuilderComponent } from './builder/builder.component';
 import { HomeComponent } from './home/home.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
+import { PrototypeComponent } from './prototype/prototype.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { FactoryMethodComponent } from './factory-method/factory-method.componen
     AbstractFactoryComponent,
     BuilderComponent,
     HomeComponent,
-    FactoryMethodComponent
+    FactoryMethodComponent,
+    PrototypeComponent
   ],
   imports: [
     BrowserModule,

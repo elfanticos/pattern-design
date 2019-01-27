@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { PrototypeComponent } from './prototype/prototype.component';
 
 // Componentes
 import { AbstractFactoryComponent } from './abstract-factory/abstract-factory.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path : 'abstract_factory' , component : AbstractFactoryComponent},
   {path : 'builder'          , component : BuilderComponent},
   {path : 'factory-method'   , component : FactoryMethodComponent},
+  {path : 'prototype'        , component : PrototypeComponent},
   {path : ''                 , component : HomeComponent}
 ];
 
