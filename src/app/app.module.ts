@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { FactoryMethodComponent } from './factory-method/factory-method.component';
 import { PrototypeComponent } from './prototype/prototype.component';
 import { SingletonComponent } from './singleton/singleton.component';
+import { AdapterComponent } from './adapter/adapter.component';
+import { BridgeComponent } from './bridge/bridge.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { SingletonComponent } from './singleton/singleton.component';
     HomeComponent,
     FactoryMethodComponent,
     PrototypeComponent,
-    SingletonComponent
+    SingletonComponent,
+    AdapterComponent,
+    BridgeComponent
   ],
   imports: [
     BrowserModule,
