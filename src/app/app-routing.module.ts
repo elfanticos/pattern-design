@@ -1,3 +1,4 @@
+import { CompositeComponent } from './composite/composite.component';
 
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
@@ -20,6 +21,7 @@ const routes: Routes = [
   {path : 'singleton'        , component : SingletonComponent},
   {path : 'adapter'          , component : AdapterComponent},
   {path : 'bridge'           , component : BridgeComponent},
+  {path : 'composite'        , component : CompositeComponent},
   {path : ''                 , component : HomeComponent},
 ];
 

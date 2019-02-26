@@ -11,6 +11,7 @@ import { PrototypeComponent } from './prototype/prototype.component';
 import { SingletonComponent } from './singleton/singleton.component';
 import { AdapterComponent } from './adapter/adapter.component';
 import { BridgeComponent } from './bridge/bridge.component';
+import { CompositeComponent } from './composite/composite.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BridgeComponent } from './bridge/bridge.component';
     PrototypeComponent,
     SingletonComponent,
     AdapterComponent,
-    BridgeComponent
+    BridgeComponent,
+    CompositeComponent
   ],
   imports: [
     BrowserModule,
