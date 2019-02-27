@@ -2,6 +2,7 @@
 
 # compiled output
 /dist
+/papa/hola
 /tmp
 /out-tsc
 
