@@ -21,10 +21,12 @@ export class CompositeComponent implements OnInit {
     this.root = new TreeNumbersComposite('root');
     this.root.add(new TreeNumbersLeaf(1));
     this.root.add(new TreeNumbersLeaf(2));
+
     this.sub1 = new TreeNumbersComposite('compuesto x');
     this.sub1.add(new TreeNumbersLeaf(3));
     this.sub1.add(new TreeNumbersLeaf(4));
     this.root.add(this.sub1);
+    
     this.root.add(new TreeNumbersLeaf(5));
     this.leaf = new TreeNumbersLeaf(6);
     this.root.add(this.leaf);
