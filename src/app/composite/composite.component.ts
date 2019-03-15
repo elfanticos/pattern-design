@@ -26,7 +26,6 @@ export class CompositeComponent implements OnInit {
     this.sub1.add(new TreeNumbersLeaf(3));
     this.sub1.add(new TreeNumbersLeaf(4));
     this.root.add(this.sub1);
-    
     this.root.add(new TreeNumbersLeaf(5));
     this.leaf = new TreeNumbersLeaf(6);
     this.root.add(this.leaf);
