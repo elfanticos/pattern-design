@@ -12,6 +12,7 @@ import { FactoryMethodComponent } from './factory-method/factory-method.componen
 import {SingletonComponent} from './singleton/singleton.component';
 import { AdapterComponent } from './adapter/adapter.component';
 import { BridgeComponent } from './bridge/bridge.component';
+import { DecoratorComponent } from './decorator/decorator.component';
 
 const routes: Routes = [
   {path : 'abstract_factory' , component : AbstractFactoryComponent},
@@ -22,6 +23,7 @@ const routes: Routes = [
   {path : 'adapter'          , component : AdapterComponent},
   {path : 'bridge'           , component : BridgeComponent},
   {path : 'composite'        , component : CompositeComponent},
+  {path : 'decorator'        , component : DecoratorComponent},
   {path : ''                 , component : HomeComponent},
 ];
 
