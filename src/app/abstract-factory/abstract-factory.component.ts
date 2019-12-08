@@ -32,6 +32,11 @@ import { MensajesEsFactory } from './mensajes/mensajes-es-factory';
 import { MensajesEnFactory } from './mensajes/mensajes-en-factory';
 import { Preguntas } from './mensajes/factory/preguntas/preguntas';
 import { Saludos } from './mensajes/factory/saludos/saludos';
+import { ILibretaAbstractFactory } from './libreta/libreta-abstact-factory.model';
+import { Libreta1Factory } from './libreta/libreta1-factory';
+import { Libreta2Factory } from './libreta/libreta2-factory';
+import { Libreta3Factory } from './libreta/libreta3-factory';
+import { ILibreta } from './libreta/factory/libreta/libreta.model';
 
 @Component({
   selector: 'app-abstract-factory',
@@ -42,7 +47,7 @@ export class AbstractFactoryComponent implements OnInit {
   // Factory mostrar el tipo de mensaje
   mensajeFactoryEs:MensajesAbstractFactory = new MensajesEsFactory();
   mensajeFactoryEn:MensajesAbstractFactory = new MensajesEnFactory();
-  
+  libretaFactory: ILibretaAbstractFactory = null;
   constructor(
   ) { }
 
@@ -59,5 +64,26 @@ export class AbstractFactoryComponent implements OnInit {
     console.log(saludosEN.buenosDias());
     console.log(saludosEN.buenasTardes());
 
+    const idLibreta: number = 1;
+
+    switch (idLibreta) {
+      case 1:
+        this.libretaFactory = new Libreta1Factory();
+        break;
+      case 2:
+        this.libretaFactory = new Libreta2Factory();
+        break;
+      case 3:
+        this.libretaFactory = new Libreta3Factory();
+        break;
+      default:
+        alert('No existe la libreta');
+        break;
+    }
+
+    if (this.libretaFactory) {
+      const libreta: ILibreta = this.libretaFactory.getLibreta();
+      console.log('values => ', libreta.getForm().value);
+    }
   }
 }
